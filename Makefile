@@ -2,7 +2,7 @@ export VIRTUAL_ENV=.venv
 
 .PHONY: baml-compile
 baml-compile:
-	uv run baml-cli generate --from ./baml_src
+	uv run which  generate --from ./baml_src
 
 setup:
 	uv venv && source .venv/bin/activate
